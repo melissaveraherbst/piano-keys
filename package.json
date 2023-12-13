@@ -1,0 +1,26 @@
+{
+  "name": "project---piano-keys",
+  "version": "1.0.0",
+  "description": "A piano player with DOM events in JavaScript",
+  "main": "mmit\"",
+  "scripts": {
+    "test": "ps://github.com/melissaveraherbst/piano-keys.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissaveraherbst/piano-keys.git"
+  },
+  "keywords": [
+    "javascript",
+    "interactive",
+    "piano",
+    "codecademy",
+    "course-project"
+  ],
+  "author": "Melissa Vera Herbst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/melissaveraherbst/piano-keys/issues"
+  },
+  "homepage": "https://github.com/melissaveraherbst/piano-keys#readme"
+}
