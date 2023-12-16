@@ -21,27 +21,32 @@ keys.forEach(function (key) {
     notes.push(document.getElementById(key));
 });
 
-// 1: Create a function named 'keyPlay' that changes the background color of the keys when they are pressed down
+// 1 
+// - Change the background color of the keys when they are pressed down
+// - Play audio file (piano note) 
 function keyPlay(event) {
-    event.target.style.backgroundColor = "#00a6c9";
+    const element = event.target.closest(".key");
+    element.style.backgroundColor = "#00a6c9";
+
+    const { id } = element;
+    const audio = document.querySelector(`audio[src='./audio/${id}.mp3']`);
+    audio.play();
 }
 
-// 2: Create a function named 'keyReturn' that returns the background color of the keys to their default when the mouse is released on the element.
+// 2
+// Return the background color of the keys to their default when the mouse is released on the element.
 function keyReturn(event) {
     // Setting a style property equal to an empty string '' in JavaScript will return the element to its original style.
-    event.target.style.backgroundColor = "";
+    event.target.closest(".key").style.backgroundColor = "";
 }
 
-// 3 - 5: Create a function named 'keyPress' that accepts one argument, called 'note'.
-// Inside the function:
-// a) create an event handler that runs the keyPlay as an event handler when a mousedown event fires on any note
-// b) create a second event handler property that runs the keyReturn when a mouseup event fires on any note
+// 3 - 5
 function keyPress(note) {
     note.addEventListener("mousedown", keyPlay);
     note.addEventListener("mouseup", keyReturn);
 }
 
-// 6 - 7: Create a .forEach loop that will pass the elements in the notes array through your event assignment function (keyPress)
+// 6 - 7
 notes.forEach(function (note) {
     keyPress(note);
 });
@@ -60,8 +65,8 @@ nextTwo.hidden = true;
 nextThree.hidden = true;
 startOver.hidden = true;
 
-// 8 - 10: Create an event handler property with a click event on the 'nextOne' element.
-// Refer to the project's informational page for details.
+// 8 - 10
+// 2nd line of the Happy Birthday song (the 1st line is the default in index.html)
 nextOne.addEventListener("click", function () {
     nextOne.hidden = true;
     nextTwo.hidden = false;
@@ -69,8 +74,8 @@ nextOne.addEventListener("click", function () {
     document.getElementById("letter-note-six").innerHTML = "C";
 });
 
-// 11 - 15: Create an event handler property with a click event on the button element called 'nextTwo'
-// Refer to the project's informational page for details.
+// 11 - 15
+// 3rd line of the Happy Birthday song
 nextTwo.addEventListener("click", function () {
     nextTwo.hidden = true;
     nextThree.hidden = false;
@@ -83,8 +88,8 @@ nextTwo.addEventListener("click", function () {
     document.getElementById("letter-note-six").innerHTML = "B";
 });
 
-// 16 - 20: Create an event handler property with a click event on the button element called 'nextTwo'
-// Refer to the project's informational page for details.
+// 16 - 20
+// 4th and last line of the Happy Birthday song;
 nextThree.addEventListener("click", function () {
     nextThree.hidden = true;
     startOver.hidden = false;
