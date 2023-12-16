@@ -1,5 +1,10 @@
 :root {
 	/* color scheme */
+	--color-1: hsl(43, 74%, 64%);
+	--color-2: hsl(197, 37%, 22%);
+	--color-3: hsl(12, 76%, 60%);
+	--color-4: hsl(43, 76%, 95%);
+	--color-5: hsl(173, 50%, 45%);
 }
 
 * {
@@ -11,7 +16,7 @@
 
 body {
 	font-family: sans-serif;
-	background: #ffc63f;
+	background: var(--color-1);
 	display: inline-block;
 	width: 100vw;
 	height: 100vh;
@@ -24,7 +29,7 @@ body {
 .title {
 	font-size: 36px;
 	padding: 0;
-	color: #141c3a;
+	color: var(--color-2);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
@@ -34,49 +39,49 @@ body {
 #demo {
 	text-align: center;
 	font-size: 18px;
-	color: #141c3a;
+	color: var(--color-2);
 	letter-spacing: 1px;
 	font-style: italic;
 	margin-bottom: 2rem;
 }
 
 .piano {
-	background-color: #fd4d3f;
+	background-color: var(--color-3);
 	margin-bottom: 2rem;
 }
 
 .key {
-	width: 40px;
-	height: 220px;
 	display: inline-block;
-	border: 2px solid #141c3a;
-	background-color: white;
-	color: #141c3a;
+	border: 2px solid var(--color-2);
+	background-color: var(--color-4);
+	color: var(--color-2);
 }
 
 .black-key {
-	width: 30px;
-	height: 140px;
-	background: #141c3a;
-	box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.25), inset -2px -2px 2px 0 rgba(0, 0, 0, 0.35);
-	color: white;
+	width: 35px;
+	height: 150px;
+	background: var(--color-2);
+	box-shadow: inset 2px 2px 2px 0 rgba(0, 0, 0, 0.25), -2px -2px 2px 0 inset rgba(255, 255, 255, 0.25);
+	color: var(--color-4);
 	position: absolute;
 	margin-left: -17.5px;
 }
 
 .white-key {
-	box-shadow: inset 4px 4px 4px 0 rgba(0, 0, 0, 0.05), inset -4px -4px 2px 0 rgb(0, 0, 0, 0.15);
+	width: 40px;
+	height: 230px;
+	box-shadow: inset 4px 4px 2px 0 rgba(0, 0, 0, 0.15), inset -4px -4px 2px 0 rgb(0, 0, 0, 0.05);
 }
 
 .keynote {
 	text-align: center;
-	margin-top: 195px;
-	color: #141c3a;
+	margin-top: 205px;
+	color: var(--color-2);
 }
 
 .black-keynote {
 	text-align: center;
-	margin-top: 115px;
+	margin-top: 125px;
 }
 
 #lyrics {
@@ -86,59 +91,40 @@ body {
 	gap: 10px;
 	flex-wrap: wrap;
 	padding: 20px;
-	background-color: #fd4d3f;
+	background-color: var(--color-3);
 }
 
-#column-one,
-#column-two,
-#column-three,
-#column-four,
-#column-five,
-#column-six,
-#column-optional {
+.column {
 	display: inline-block;
 	text-align: center;
 }
 
-#word-one,
-#word-two,
-#word-three,
-#word-four,
-#word-five,
-#word-six,
-#word-optional {
+.word {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: white;
 	width: 100px;
 	height: 40px;
+	color: var(--color-2);
+	background-color: var(--color-4);
 	letter-spacing: 5px;
-	color: #141c3a;
 }
 
-#letter-note-one,
-#letter-note-two,
-#letter-note-three,
-#letter-note-four,
-#letter-note-five,
-#letter-note-six,
-#letter-note-optional {
-	color: white;
+.letter {
+	color: var(--color-4);
+	width: 100px;
 	margin: 0 auto;
 	margin-top: 10px;
 }
 
-#first-next-line,
-#second-next-line,
-#third-next-line,
-#fourth-next-line {
-	width: 90px;
+.next {
+	width: 100px;
 	height: 40px;
 	font-size: 16px;
 	border: none;
-	background-color: #ffc63f;
-	color: #141c3a;
+	box-shadow: inset 4px 4px 2px 0px hsla(20, 50%, 50%, 0.25), inset -4px -4px 2px 0 hsla(0, 0%, 100%, 0.25);
+	background-color: var(--color-1);
+	color: var(--color-2);
 	letter-spacing: 1px;
 	cursor: pointer;
 }

@@ -26,7 +26,7 @@ keys.forEach(function (key) {
 // - Play audio file (piano note) 
 function keyPlay(event) {
     const element = event.target.closest(".key");
-    element.style.backgroundColor = "#00a6c9";
+    element.style.backgroundColor = "var(--color-5)";
 
     const { id } = element;
     const audio = document.querySelector(`audio[src='./audio/${id}.mp3']`);
