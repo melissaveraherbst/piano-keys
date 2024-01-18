@@ -10,7 +10,9 @@
 
 This interactive game allows users to play the "Happy Birthday" song on a virtual piano using DOM events in JavaScript. This app is designed to be beginner-friendly and offers a simple, enjoyable experience.
 
-![127 0 0 1_4001_(iPad Mini)](https://github.com/melissaveraherbst/piano-keys/assets/84316275/6ba9ba13-6d86-408e-bb7f-8eecb772266e)
+<div align=center>
+    <img src="https://github.com/melissaveraherbst/piano-keys/assets/84316275/6ba9ba13-6d86-408e-bb7f-8eecb772266e" width=65%>
+</div>
 
 ## 🚀 Features
 
