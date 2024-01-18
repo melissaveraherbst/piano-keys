@@ -12,7 +12,7 @@ This interactive game allows users to play the "Happy Birthday" song on a virtua
 
 ![127 0 0 1_4001_(iPad Mini)](https://github.com/melissaveraherbst/piano-keys/assets/84316275/6ba9ba13-6d86-408e-bb7f-8eecb772266e)
 
-## 🎹 Features
+## 🚀 Features
 
 - Play the "Happy Birthday" song by clicking on the virtual piano keys.
 - Easy-to-use interface
