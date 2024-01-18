@@ -2,6 +2,10 @@
 
 # Piano Keys &rarr; Piano Player App
 
+**A Codecademy Project from the Backend Engineer Career Path**
+
+<hr>
+
 </div>
 
 This interactive game allows users to play the "Happy Birthday" song on a virtual piano using DOM events in JavaScript. This app is designed to be beginner-friendly and offers a simple, enjoyable experience.
