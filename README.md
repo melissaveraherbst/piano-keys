@@ -1,6 +1,6 @@
 <div align=center>
 
-# Piano Keys &rarr; Piano Player App
+# Piano Keys | Piano Player App
 
 **A Codecademy Project from the Backend Engineer Career Path**
 
